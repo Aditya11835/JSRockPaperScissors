@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(4, 4, 53);
+}
+.heading{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.scoreDisplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 8, 8);
+    height: 400px;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px whitesmoke solid;
+    color: white;
+    font-size: large;
+}
+
+.inputButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    border: 2px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.inputButtons>.buttonContainer>button{
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+#paperButton{
+    background-image: url(https://cdn.icon-icons.com/icons2/3194/PNG/512/hand_paper_icon_194460.png)
+}
+#rockButton{
+    background-image: url(https://cdn.icon-icons.com/icons2/3194/PNG/512/hand_rock_icon_194408.png);
+}
+#scissorsButton{
+    background-image:  url(https://cdn.icon-icons.com/icons2/3194/PNG/512/hand_scissors_icon_194407.png);
+}
+
+.inputButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: column; /* Stack button and text vertically */
+    align-items: center; /* Center-align button and text */
+  }
+  
+  .buttonText {
+    margin-top: 5px; /* Space between button and text */
+    font-size: 14px; /* Adjust text size */
+    color: #fff; /* Text color */
+  }

@@ -46,7 +46,9 @@ function playRound(pressedButton){
     let playerChoice = pressedButton;
     let computerChoice = getComputerChoice();
     let currentResult = calculateRound(playerChoice, computerChoice);
-
+    if(currentResult === undefined){
+        return;
+    }
     const currentRoundResultDisplay = document.querySelector("#currentRoundResult");
     currentRoundResultDisplay.textContent = `${currentResult} won current round!`;
 

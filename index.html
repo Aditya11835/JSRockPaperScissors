@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="inputButtons">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
-    </div>
+    <div class="heading"><h1>Rock, Papers, Scissors Game</h1></div>
+    <div class="mainContainer">
     <div class="scoreDisplay">
         <span id="currentRoundResult">
-
         </span>
         <ul id="scoretab">
             <li id="humanScoretab">
@@ -24,6 +21,21 @@
             </li>
         </ul>
     </div>
+    <div class="inputButtons">
+        <div class="buttonContainer">
+        <button id="rockButton">Rock</button>
+        <span class="buttonText">Rock</span>
+    </div>
+    <div class="buttonContainer">
+        <button id="paperButton">Paper</button>
+        <span class="buttonText">Paper</span>
+    </div>
+    <div class="buttonContainer">
+        <button id="scissorsButton">Scissors</button>
+        <span class="buttonText">Scissors</span>
+    </div>
+    </div>
+</div>
     <script src="code.js"></script>
 </body>
 </html>
